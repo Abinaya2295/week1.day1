@@ -5,7 +5,9 @@ public class PrimeNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int input = 13;
+		
 		boolean flag = false;
+		
 		for(int i = 2; i <= input / 2; i++)
 		{
 			if(input % i == 0) 
@@ -14,7 +16,12 @@ public class PrimeNumber {
 					break;
 			}
 		}
-        if(flag != true)
+		if(input == 0 || input == 1)
+        {
+        	System.out.println(input + " is not Prime Number");
+        	
+        }
+		else if(flag != true)
         {
         	System.out.println(input + " is a Prime Number");
         }
